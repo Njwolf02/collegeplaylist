@@ -1,0 +1,155 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+<div class="container">
+
+    <div class="col-md-9">
+        <div class="row">
+            <h3>Browse</h3>
+            <hr />
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="~/images/no content.svg" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="caption">
+                        <h4>Title</h4>
+                        <p>Description:</p>
+                        <p>@DateTime.Today.Date.ToString("dd/MM/yyyy") - Views: 20</p>
+                        <p>
+                            Tags: <span class="badge alert-danger">Drake</span>
+                            <span class="badge alert-danger">Lil Wayne</span>
+                            <div class="rating text-left">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">&nbsp;</div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="~/images/no content.svg" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="caption">
+                        <h4>Title</h4>
+                        <p>Description:</p>
+                        <p>@DateTime.Today.Date.ToString("dd/MM/yyyy") - Views: 50</p>
+                        <p>
+                            Tags: <span class="badge alert-danger">Future</span>
+                            <span class="badge alert-danger">A$AP Rocky</span>
+                            <div class="rating text-left">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="row">
+            <h3>Genre</h3>
+            <hr />
+
+            <div class="row">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <span class="badge">14</span>
+                        Alternative
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <span class="badge">2</span>
+                        Classical
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <span class="badge">20</span>
+                        Country
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <span class="badge">8</span>
+                        Electronic
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <span class="badge">19</span>
+                        HipHop/Rap
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <span class="badge">5</span>
+                        Pop
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <span class="badge">27</span>
+                        Rock
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <h3>Artists</h3>
+            <hr />
+
+            <div class="row">
+                <a href="#"><span class="badge alert-danger">Drake</span></a>
+                <a href="#"><span class="badge alert-danger">Lil Wayne</span></a>
+                <a href="#"><span class="badge alert-danger">Kendrick Lamar</span></a>
+                <a href="#"><span class="badge alert-danger">A$AP Rocky</span></a>
+                <a href="#"><span class="badge alert-danger">Future</span></a>
+                <a href="#"><span class="badge alert-danger">Fetty Wap</span></a>
+                <a href="#"><span class="badge alert-danger">Meek Mill</span></a>
+                <a href="#"><span class="badge alert-danger">Tyga</span></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">&nbsp;</div>
+    <div class="row">&nbsp;</div>
+
+    <nav class="text-left example">
+        <ul class="pagination">
+            <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+@section scripts {
+    <script>
+    $(document).ready(function () {
+        $("#home").removeClass("active");
+    });
+
+    $(document).ready(function () {
+        $("#browse").addClass("active");
+    });
+    </script>
+}
